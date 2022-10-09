@@ -1,0 +1,18 @@
+  body {
+      background-color: rgb(123, 196, 238);
+  }
+
+  h3 {
+    color: rgb(255, 115, 29);
+      background-color: rgba(31, 167, 54, 0.336);
+  }
+
+  hr {
+      background-color: rgba(0, 0, 0, 0.445);
+      border-style: none;
+      height: 2px;
+      width: 80%;
+  }
+  h1{
+    color: rgb(95, 157, 247);
+  }
