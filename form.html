@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/dürüm">
+      <!-- <div>
+                <button type="button">Lütfen formu gönderme!</button>
+            </div> -->
+      <div>
+        <label for="kullanıcı">Kullanıcı Adı:</label>
+        <input type="text" name="username" id="kullanıcı" />
+      </div>
+      <div>
+        <label for="şifre">Şifre:</label>
+        <input type="password" name="password" id="şifre" />
+      </div>
+      <!-- <div>
+                <button>GÖNDER!</button>
+            </div> -->
+      <div>
+        <label for="color">Renk Seçiniz</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <div>
+        <label for="age">Yaşınızı giriniz.</label>
+        <input type="number" id="age" name="age" />
+      </div>
+      <div>
+        <label for="year">Tarih giriniz</label>
+        <input type="month" id="year" name="year" />
+      </div>
+      <div>
+        <label for="adress">Adress</label>
+        <input type="url" id="adress" name="adress" />
+      </div>
+      <div>
+        <label for="ask">kabul ediyo musun?</label>
+        <input type="radio" name="ask" id="ask" />
+      </div>
+      <div>
+        <label for="clear">Resetlemek istediğine emin misin?</label>
+        <input type="reset" id="clear" />
+      </div>
+      <div>
+        <button>ONAYLIYORUM</button>
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+    <hr />
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" />
+      <button>Redditte ara</button>
+    </form>
+    <br />
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Google de ara</button>
+    </form>
+    <br />
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>Youtube da ara</button>
+    </form>
+
+    <h2>Daha fazla Input</h2>
+    <form action="/birds">
+      <input type="checkbox" name="tos" id="kabul" checked />
+      <label for="kabul">Kabul Ediyorum</label>
+      <br />
+      <p>
+        <label for="xs">XS</label>
+        <input type="radio" id="xs" name="control" value="xs" />
+        <label for="s">S</label>
+        <input type="radio" id="s" name="control" value="s" />
+        <label for="m">M</label>
+        <input type="radio" id="m" name="control" value="m" />
+      </p>
+      <p>
+        <label for="hayvan">Favori hayvanınızı seçiniz</label>
+        <select name="hayvan" id="hayvan">
+          <option value="">--Birini seçiniz--</option>
+          <option value="balık">Balık</option>
+          <option value="kedi">Kedi</option>
+          <option value="köpek">Köpek</option>
+          <option value="kuş">Kuş</option>
+        </select>
+      </p>
+      <p>
+        <label for="peynir">Peynir Miktarı</label>
+        <input
+          type="range"
+          name="peynir miktarı"
+          min="1"
+          max="100"
+          id="peynir"
+          step="7"
+        />
+      </p>
+      <p>
+        <label for="special">Özel İstek</label>
+        <br />
+        <textarea name="istek" id="special" cols="40" rows="10"></textarea>
+      </p>
+      <button>Yolla</button>
+    </form>
+    <hr />
+
+    <h2>Validations</h2>
+    <form action="/yedek">
+      <label for="username">Kullanıcı Adı</label>
+      <input type="text" name="ilk" id="username" required />
+      <p>
+        <label for="kullanıcıadı">Kullanıcı Adı</label>
+        <input
+          type="text"
+          id="kullanıcıadı"
+          name="kullanıcıadı"
+          minlength="5"
+          maxlength="25"
+        />
+      </p>
+      <h2>Url Doğrulama</h2>
+      <p>
+        <input type="url" />
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

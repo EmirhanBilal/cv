@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="label.css" />
+  <body>
+    <main>
+      <h1>Race Registration</h1>
+      <form action="/register">
+        <label for="username">First Name</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          placeholder="first name"
+        />
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          required
+          placeholder="last name"
+        />
+        <br />
+        <br />
+        <p>Select a Race:</p>
+        <br />
+        <input type="radio" name="radio" id="fun" required />
+        <label for="fun">Fun Run 5k</label>
+        <br />
+        <input type="radio" name="radio" id="half" required />
+        <label for="half">Half Marathon</label>
+        <br />
+        <input type="radio" name="radio" id="full" required />
+        <label for="full">Full Marathon</label>
+        <br />
+        <label for="mail">Email</label>
+        <input
+          type="mail"
+          name="mail"
+          id="mail"
+          required
+          placeholder="örn:grey@gmail.com"
+        />
+        <label for="password">password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="şifre"
+        />
+        <br />
+        <label for="age">Select Age Group</label>
+        <select name="age" id="age">
+          <option value="Under 18">Under 18</option>
+          <option value="18-30">18-30</option>
+          <option value="30-50">30-50</option>
+          <option value="50+">50+</option>
+        </select>
+        <br />
+        <button>Register!</button>
+      </form>
+    </main>
+  </body>
+</html>
